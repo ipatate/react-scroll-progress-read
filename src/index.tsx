@@ -17,8 +17,6 @@ const ScrollProgress: React.FC<IProps> = (
     barColor
   }
 ) => {
-  console.log("l");
-
   // update bar width
   const [scrolled, setScrolled] = React.useState("0%");
   // listen scroll
