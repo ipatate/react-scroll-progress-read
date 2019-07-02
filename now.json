@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "example/package.json",
-      "use": "@now/static-build",
+      "use": "@now/node@canary",
       "config": {"distDir": "example"}
     }
   ]
