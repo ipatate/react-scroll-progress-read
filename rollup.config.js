@@ -19,7 +19,7 @@ export default {
     {
       file: pkg.browser,
       format: 'iife',
-      name: 'ScrollProgress',
+      name: 'ScrollProgressBar',
       globals: {
         react: 'React',
       },

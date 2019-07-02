@@ -1,10 +1,10 @@
 import * as React from 'react';
-import ScrollProgress from '../../dist/index.js';
+import ScrollProgressBar from '../../dist/index.js';
 
 const App: React.FC<{}> = () => (
   <>
     <div style={{margin: 0, padding: 0, position: 'fixed', top: 0}}>
-      <ScrollProgress />
+      <ScrollProgressBar />
     </div>
     <div
       style={{
