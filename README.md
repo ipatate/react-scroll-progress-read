@@ -29,7 +29,7 @@ You can change parameter with the props :
 The props aren't required.
 
 ```jsx
-import ScrollProgress from 'react-scroll-progress-bar';
+import ScrollProgressBar from 'react-scroll-progress-bar';
 
 ...
 render() {
