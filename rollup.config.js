@@ -16,14 +16,6 @@ export default {
       file: pkg.module,
       format: 'cjs',
     },
-    {
-      file: pkg.browser,
-      format: 'iife',
-      name: 'ScrollProgressBar',
-      globals: {
-        react: 'React',
-      },
-    },
   ],
   external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
