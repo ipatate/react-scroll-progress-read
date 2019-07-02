@@ -1,8 +1,40 @@
 {
   "name": "react-scroll-progress",
+  "description": "Progress Bar for show position of scroll page",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.bundle.js",
   "repository": "git@github.com:ipatate/react-scroll-progress.git",
   "author": "Patrick Faramaz <faramazpat@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "lint": "tslint src",
+    "format": "prettier --write \"src/*.+(js|jsx||json|yml|yaml|css|scss|ts|tsx|graphql|vue|mjs)\" ",
+    "validate": "npm run lint && npm run test",
+    "precommit": "lint-staged && npm run test"
+  },
+  "peerDependencies": {
+    "react": ">=15.x"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "rollup": "^1.16.4",
+    "rollup-plugin-terser": "^5.0.0",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.2"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 11"
+  ]
 }
