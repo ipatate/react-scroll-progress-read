@@ -10,10 +10,5 @@
       "use": "@now/static-build"
     }
   ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "example/index.html"
-    }
-  ]
+  "routes": [{"src": "/(.*)", "dest": "example/dist/$1"}]
 }

@@ -1,7 +1,7 @@
 {
   "name": "react-scroll-progress-bar",
   "description": "Progress Bar for show position of scroll page",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.bundle.js",
