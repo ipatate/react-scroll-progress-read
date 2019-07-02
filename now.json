@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "builds": [{"src": "example/package.json", "use": "@now/static-build"}]
+  "builds": [
+    {
+      "src": "example/package.json",
+      "use": "@now/static-build",
+      "config": {"distDir": "example"}
+    }
+  ]
 }
