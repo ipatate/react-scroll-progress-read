@@ -1,11 +1,11 @@
 {
-  "name": "react-scroll-progress-bar",
+  "name": "react-scroll-progress-read",
   "description": "Progress Bar for show position of scroll page",
   "version": "0.0.2",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.bundle.js",
-  "repository": "git@github.com:ipatate/react-scroll-progress-bar.git",
+  "repository": "git@github.com:ipatate/react-scroll-progress-read.git",
   "author": "Patrick Faramaz <info@goodmotion.fr>",
   "license": "MIT",
   "scripts": {
