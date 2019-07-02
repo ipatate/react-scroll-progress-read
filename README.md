@@ -7,12 +7,12 @@ When you scroll on the page, the bar indicate the progression on the page.
 ### For include in your project
 
 ```jsx
-import ScrollProgress from 'react-scroll-progress';
+import ScrollProgressBar from 'react-scroll-progress-bar';
 
 ...
 render() {
   <div>
-  <ScrollProgress />
+  <ScrollProgressBar />
   ....
   </div>
 }
@@ -29,12 +29,12 @@ You can change parameter with the props :
 The props aren't required.
 
 ```jsx
-import ScrollProgress from 'react-scroll-progress';
+import ScrollProgress from 'react-scroll-progress-bar';
 
 ...
 render() {
   <div>
-  <ScrollProgress
+  <ScrollProgressBar
     backgroundColor="#CCC"
     barColor="#FFCC00"
     height="5px"

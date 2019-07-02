@@ -10,7 +10,7 @@ interface IScrollProgressProps {
   height?: string
 }
 
-const ScrollProgress: React.FC<IScrollProgressProps> = (
+const ScrollProgressBar: React.FC<IScrollProgressProps> = (
   {
     backgroundColor,
     height,
@@ -57,10 +57,10 @@ const ScrollProgress: React.FC<IScrollProgressProps> = (
   );
 };
 
-ScrollProgress.defaultProps = {
+ScrollProgressBar.defaultProps = {
   backgroundColor: "#CCC",
   height: "5px",
   barColor: "#e91e63"
 };
 
-export default ScrollProgress;
+export default ScrollProgressBar;
