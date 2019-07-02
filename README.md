@@ -4,6 +4,8 @@
 
 When you scroll on the page, the bar indicate the progression on the page.
 
+example: [https://react-yj7ccf.stackblitz.io](https://react-yj7ccf.stackblitz.io)
+
 ### For include in your project
 
 ```jsx
