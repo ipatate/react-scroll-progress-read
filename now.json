@@ -10,5 +10,11 @@
       "use": "@now/static-build",
       "config": {"distDir": "example"}
     }
+  ],
+  "routes": [
+    {
+      "src": "/example",
+      "dest": "/index.html"
+    }
   ]
 }

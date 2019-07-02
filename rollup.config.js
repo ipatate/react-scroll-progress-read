@@ -10,11 +10,11 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'cjs',
+      format: 'es',
     },
     {
       file: pkg.module,
-      format: 'es',
+      format: 'cjs',
     },
     {
       file: pkg.browser,

@@ -1,5 +1,5 @@
-const ScrollProgress = require('../../dist/index.js');
 import * as React from 'react';
+import ScrollProgress from '../../dist/index.js';
 
 const App: React.FC<{}> = () => (
   <>
