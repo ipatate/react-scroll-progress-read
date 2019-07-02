@@ -12,29 +12,80 @@
     "build": "rollup -c",
     "watch": "rollup -cw",
     "test": "jest",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "yarn build",
     "lint": "tslint src",
     "format": "prettier --write \"src/*.+(js|jsx||json|yml|yaml|css|scss|ts|tsx|graphql|vue|mjs)\" ",
-    "validate": "npm run lint && npm run test",
-    "precommit": "lint-staged && npm run test"
+    "validate": "yarn lint && yarn test"
   },
   "peerDependencies": {
     "react": ">=15.x"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.15",
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.8.4",
+    "@types/react-test-renderer": "^16.8.2",
+    "husky": "^3.0.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.0.1",
     "react": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
     "rollup": "^1.16.4",
     "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-typescript2": "^0.21.2",
+    "ts-jest": "^24.0.2",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.0.0",
     "typescript": "^3.5.2"
+  },
+  "lint-staged": {
+    "linters": {
+      "**/*.+(ts|tsx)": [
+        "prettier --write",
+        "tslint",
+        "git add"
+      ],
+      "**/*.+(js|jsx||json|yml|yaml|ts|md|tsx|graphql|vue|mjs)": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/dist/*"
+    ]
   },
   "browserslist": [
     "last 2 version",
     "> 1%",
     "IE 11"
-  ]
+  ],
+  "jest": {
+    "globals": {
+      "__PATH_PREFIX__": ""
+    },
+    "transform": {
+      "^.+\\.(tsx?|jsx?)$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "testPathIgnorePatterns": [
+      "node_modules",
+      ".rpt2_cache"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "moduleNameMapper": {
+      "typeface-*": "identity-obj-proxy",
+      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file.js"
+    },
+    "collectCoverage": false,
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ]
+  }
 }
