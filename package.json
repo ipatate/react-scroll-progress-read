@@ -8,6 +8,12 @@
   "repository": "git@github.com:ipatate/react-scroll-progress-read.git",
   "author": "Patrick Faramaz <info@goodmotion.fr>",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "scroll",
+    "progressbar",
+    "read"
+  ],
   "scripts": {
     "build": "yarn clean && rollup -c && tsc",
     "watch": "rollup -cw",
