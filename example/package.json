@@ -1,8 +1,12 @@
 {
-  "name": "example",
+  "name": "example-progress-bar",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "now-build": "yarn build"
+  },
   "dependencies": {
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.8.4",
