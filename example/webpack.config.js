@@ -1,3 +1,5 @@
+const CopyPlugin = require('copy-webpack-plugin');
+
 module.exports = {
   mode: 'production',
   devtool: 'source-map',
@@ -29,4 +31,5 @@ module.exports = {
     react: 'React',
     'react-dom': 'ReactDOM',
   },
+  plugins: [new CopyPlugin([{from: './index.html', to: 'index.html'}])],
 };
