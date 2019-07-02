@@ -2,8 +2,12 @@
   "version": 2,
   "builds": [
     {
+      "src": "package.json",
+      "use": "@now/static-build"
+    },
+    {
       "src": "example/package.json",
-      "use": "@now/node@canary",
+      "use": "@now/static-build",
       "config": {"distDir": "example"}
     }
   ]

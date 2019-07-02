@@ -4,6 +4,9 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx'],
   },
+  entry: {
+    main: ['./src/index.tsx'],
+  },
   module: {
     rules: [
       {

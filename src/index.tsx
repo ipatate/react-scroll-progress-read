@@ -1,7 +1,7 @@
 import * as React from "react";
 import { fixed, getScrollPage } from "./utils";
 
-interface IProps {
+interface IScrollProgressProps {
   /** background of container */
   backgroundColor?: string,
   /** color of bar */
@@ -10,7 +10,7 @@ interface IProps {
   height?: string
 }
 
-const ScrollProgress: React.FC<IProps> = (
+const ScrollProgress: React.FC<IScrollProgressProps> = (
   {
     backgroundColor,
     height,

@@ -9,14 +9,16 @@
   "author": "Patrick Faramaz <faramazpat@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "build": "yarn clean && rollup -c && tsc",
     "watch": "rollup -cw",
     "type": "tsc --noEmit",
     "test": "jest",
     "prepublishOnly": "yarn build",
     "lint": "tslint src",
     "format": "prettier --write \"src/*.+(js|jsx||json|yml|yaml|css|scss|ts|tsx|graphql|vue|mjs)\" ",
-    "validate": "yarn lint && yarn test"
+    "validate": "yarn lint && yarn test",
+    "now-build": "yarn build",
+    "clean": "rm -rf ./dist"
   },
   "peerDependencies": {
     "react": ">=15.x"
