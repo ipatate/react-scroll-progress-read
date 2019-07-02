@@ -1,35 +1,38 @@
-import * as React from 'react';
-import {fixed, getScrollPage} from './utils';
+import * as React from "react";
+import { fixed, getScrollPage } from "./utils";
 
 interface IProps {
   /** background of container */
-  backgroundColor?: string;
+  backgroundColor?: string,
   /** color of bar */
-  barColor?: string;
+  barColor?: string,
   /** height of progress bar */
-  height?: string;
+  height?: string
 }
 
-const ScrollProgress: React.FC<IProps> = ({
-  backgroundColor,
-  height,
-  barColor,
-}) => {
+const ScrollProgress: React.FC<IProps> = (
+  {
+    backgroundColor,
+    height,
+    barColor
+  }
+) => {
+  console.log("l");
+
   // update bar width
-  const [scrolled, setScrolled] = React.useState('0%');
+  const [scrolled, setScrolled] = React.useState("0%");
   // listen scroll
   React.useEffect(() => {
     updatePos();
-    window.addEventListener('scroll', updatePos);
-    return () => window.removeEventListener('scroll', updatePos);
+    window.addEventListener("scroll", updatePos);
+    return () => window.removeEventListener("scroll", updatePos);
   });
   // update width with scroll position
   const updatePos = () => {
     // scroll
     const scrollPx = getScrollPage();
     // window height
-    const winHeightPx =
-      document.documentElement.scrollHeight -
+    const winHeightPx = document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
     // position scroll
     const _p = fixed(scrollPx / winHeightPx);
@@ -41,13 +44,13 @@ const ScrollProgress: React.FC<IProps> = ({
   const containerStyle = {
     background: backgroundColor,
     height,
-    width: '100vw',
+    width: "100vw"
   };
   // style for bar
   const barStyle = {
     height,
     background: barColor,
-    width: scrolled,
+    width: scrolled
   };
   return (
     <div style={containerStyle}>
@@ -57,9 +60,9 @@ const ScrollProgress: React.FC<IProps> = ({
 };
 
 ScrollProgress.defaultProps = {
-  backgroundColor: '#CCC',
-  height: '5px',
-  barColor: '#e91e63',
+  backgroundColor: "#CCC",
+  height: "5px",
+  barColor: "#e91e63"
 };
 
 export default ScrollProgress;

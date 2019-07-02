@@ -11,6 +11,7 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -cw",
+    "type": "tsc --noEmit",
     "test": "jest",
     "prepublishOnly": "yarn build",
     "lint": "tslint src",
@@ -34,25 +35,16 @@
     "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-typescript2": "^0.21.2",
     "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.1.1",
     "typescript": "^3.5.2"
   },
-  "lint-staged": {
-    "linters": {
-      "**/*.+(ts|tsx)": [
-        "prettier --write",
-        "tslint",
-        "git add"
-      ],
-      "**/*.+(js|jsx||json|yml|yaml|ts|md|tsx|graphql|vue|mjs)": [
-        "prettier --write",
-        "git add"
-      ]
-    },
-    "ignore": [
-      "**/dist/*"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn type && lint-staged && yarn test && yarn format && git add ."
+    }
   },
   "browserslist": [
     "last 2 version",
