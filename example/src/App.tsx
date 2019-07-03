@@ -34,6 +34,13 @@ const App: React.FC<{}> = () => {
       <div style={{margin: 0, padding: 0, position: 'fixed', top: 0}}>
         <ScrollProgressRead {...state} />
       </div>
+      <div style={{margin: 0, padding: 0, position: 'fixed', bottom: 0}}>
+        <ScrollProgressRead
+          target="read-container"
+          height="20px"
+          barColor="blue"
+        />
+      </div>
       <div
         style={{
           maxWidth: '700px',
@@ -62,97 +69,193 @@ const App: React.FC<{}> = () => {
             <option value="20px">20px</option>
           </select>
         </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
-        faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
-        qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
-        quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
-        me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
-        igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+        </p>
+        <h2>Target Container</h2>
+        <p id="read-container">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
+          faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
+          qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
+          quidem iam fit etiam in Academia. Sit hoc ultimum bonorum, quod nunc a
+          me defenditur; Duo Reges: constructio interrete. Tum Piso: Quoniam
+          igitur aliquid omnes, quid Lucius noster? Primum quid tu dicis breve?
+        </p>
       </div>
+      <footer style={{height: '400px', background: '#CCC'}} />
     </>
   );
 };
