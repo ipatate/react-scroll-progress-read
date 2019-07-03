@@ -6,5 +6,5 @@
       "use": "@now/static-build"
     }
   ],
-  "routes": [{"src": "/(.*)", "dest": "/index.html"}]
+  "routes": [{"src": "/(.*)", "dest": "example/$1"}]
 }
