@@ -12,10 +12,6 @@ export default {
       file: pkg.main,
       format: 'es',
     },
-    {
-      file: pkg.module,
-      format: 'cjs',
-    },
   ],
   external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
