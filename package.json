@@ -64,7 +64,7 @@
   ],
   "jest": {
     "setupFilesAfterEnv": [
-      "./setup-jest.js"
+      "./setup-jest.ts"
     ],
     "globals": {
       "__PATH_PREFIX__": ""
