@@ -22,11 +22,14 @@ render() {
 
 ### Props config
 
+By default, the bar take the window height. If you want target an html element, you must indicate the ID of the element in props with "target"
+
 You can change parameter with the props :
 
 - backgroundColor (string) : color of the container
 - barColor (string) : color of the bar
 - height (string) : height of the component.
+- target (string) : ID of html element
 
 The props aren't required.
 
@@ -40,6 +43,7 @@ render() {
     backgroundColor="#CCC"
     barColor="#FFCC00"
     height="5px"
+    target="read-container"
   />
   ....
   </div>
