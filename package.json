@@ -1,7 +1,7 @@
 {
   "name": "react-scroll-progress-read",
   "description": "Progress Bar for show position of scroll page",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "./dist/index.js",
   "repository": "git@github.com:ipatate/react-scroll-progress-read.git",
   "author": "Patrick Faramaz <info@goodmotion.fr>",
@@ -28,14 +28,19 @@
     "react": ">=15.x"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.1",
     "@types/jest": "^24.0.15",
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.8.4",
     "@types/react-test-renderer": "^16.8.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "husky": "^3.0.0",
     "jest": "^24.8.0",
+    "jest-dom": "^3.5.0",
     "lint-staged": "^9.0.1",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "rollup": "^1.16.4",
     "rollup-plugin-terser": "^5.0.0",
@@ -58,6 +63,9 @@
     "IE 11"
   ],
   "jest": {
+    "setupFilesAfterEnv": [
+      "./setup-jest.ts"
+    ],
     "globals": {
       "__PATH_PREFIX__": ""
     },

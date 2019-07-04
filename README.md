@@ -4,7 +4,7 @@
 
 When you scroll on the page, the bar indicate the progression on the page.
 
-example: [https://react-yj7ccf.stackblitz.io](https://react-yj7ccf.stackblitz.io)
+example: [https://react-scroll-progress-read.faramazpat.now.sh/](https://react-scroll-progress-read.faramazpat.now.sh/)
 
 ### For include in your project
 
