@@ -1,5 +1,3 @@
-# WIP
-
 ## React Component for show progress bar connected with the scroll.
 
 When you scroll on the page, the bar indicate the progression on the page.
