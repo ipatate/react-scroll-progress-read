@@ -2,7 +2,9 @@
 
 When you scroll on the page, the bar indicate the progression on the page.
 
-example: [https://react-scroll-progress-read.faramazpat.now.sh/](https://react-scroll-progress-read.faramazpat.now.sh/)
+example : [https://react-scroll-progress-read.faramazpat.now.sh/](https://react-scroll-progress-read.faramazpat.now.sh/)
+
+npm package : [https://www.npmjs.com/package/react-scroll-progress-read](https://www.npmjs.com/package/react-scroll-progress-read)
 
 ### For include in your project
 
