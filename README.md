@@ -6,6 +6,10 @@ example : [https://react-scroll-progress-read.faramazpat.now.sh/](https://react-
 
 npm package : [https://www.npmjs.com/package/react-scroll-progress-read](https://www.npmjs.com/package/react-scroll-progress-read)
 
+### React version required
+
+Version 16.8 for use React Hook
+
 ### For include in your project
 
 ```jsx

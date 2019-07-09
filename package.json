@@ -25,7 +25,7 @@
     "clean": "rm -rf ./dist"
   },
   "peerDependencies": {
-    "react": ">=15.x"
+    "react": ">=16.8"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.1",
