@@ -4,6 +4,7 @@ interface IScrollProgressProps {
     barColor?: string;
     height?: string;
     target?: string;
+    refTarget?: React.RefObject<HTMLElement>;
 }
-declare const ScrollProgressRead: React.FC<IScrollProgressProps>;
-export default ScrollProgressRead;
+declare const _default: React.NamedExoticComponent<IScrollProgressProps>;
+export default _default;
