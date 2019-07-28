@@ -37,7 +37,7 @@ exports[`test scroll progress component target not exist 1`] = `
       Object {
         "background": "#e91e63",
         "height": "5px",
-        "width": "NaN%",
+        "width": "0%",
       }
     }
   />

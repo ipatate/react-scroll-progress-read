@@ -24,11 +24,14 @@ const ScrollProgressRead: React.FC<IScrollProgressProps> = (
   // update bar width
   const [scrolled, setScrolled] = React.useState("0%");
   // listen scroll
-  React.useEffect(() => {
-    updatePos();
-    window.addEventListener("scroll", updatePos);
-    return () => window.removeEventListener("scroll", updatePos);
-  });
+  React.useEffect(
+    () => {
+      updatePos();
+      window.addEventListener("scroll", updatePos);
+      return () => window.removeEventListener("scroll", updatePos);
+    },
+    []
+  );
   // update width with scroll position
   const updatePos = () => {
     let elementHeight = 0;
