@@ -34,8 +34,11 @@ You can change parameter with the props :
 - barColor (string) : color of the bar
 - height (string) : height of the component.
 - target (string) : ID of html element
+- refTarget (React.RefObject) : reference to react element
 
 The props aren't required.
+
+if not ref target, the component use target ID and if target is undefined, the component use the document.
 
 ```jsx
 import ScrollProgressRead from 'react-scroll-progress-read';
@@ -48,6 +51,7 @@ render() {
     barColor="#FFCC00"
     height="5px"
     target="read-container"
+    refTarget={refContainer}
   />
   ....
   </div>

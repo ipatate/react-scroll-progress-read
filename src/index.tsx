@@ -9,7 +9,9 @@ interface IScrollProgressProps {
   /** height of progress bar */
   height?: string,
   /** ID of target container */
-  target?: string
+  target?: string,
+  /** ref of container */
+  refTarget?: React.RefObject<HTMLElement>
 }
 
 const ScrollProgressRead: React.FC<IScrollProgressProps> = (
@@ -17,15 +19,20 @@ const ScrollProgressRead: React.FC<IScrollProgressProps> = (
     backgroundColor,
     height,
     barColor,
-    target
+    target,
+    refTarget
   }
 ) => {
-  const targetContainer = target ? document.getElementById(target) : null;
+  let containerByID: HTMLElement | null;
+
   // update bar width
   const [scrolled, setScrolled] = React.useState("0%");
   // listen scroll
   React.useEffect(
     () => {
+      // find element by ID
+      containerByID = target ? document.getElementById(target) : null;
+      // update on mount
       updatePos();
       window.addEventListener("scroll", updatePos);
       return () => window.removeEventListener("scroll", updatePos);
@@ -34,6 +41,12 @@ const ScrollProgressRead: React.FC<IScrollProgressProps> = (
   );
   // update width with scroll position
   const updatePos = () => {
+    // if ref use it or use container by ID
+    const targetContainer = refTarget
+      ? refTarget.current
+      : // or use container ID
+        containerByID ? containerByID : null;
+
     let elementHeight = 0;
     let startTop = 0;
     // scroll
@@ -51,12 +64,13 @@ const ScrollProgressRead: React.FC<IScrollProgressProps> = (
     }
     // remove difference between top window and element
     const _t = fixed(scrollPx - startTop);
+
     // if before element position when target is element
-    if (scrollPx < startTop && scrolled !== "0%") {
+    if (scrollPx < startTop) {
       return setScrolled("0%");
     }
-
-    if (_t > elementHeight && scrolled !== "100%") {
+    // if after element end
+    if (_t > elementHeight) {
       return setScrolled("100%");
     }
     // position scroll
@@ -91,4 +105,4 @@ ScrollProgressRead.defaultProps = {
   barColor: "#e91e63"
 };
 
-export default ScrollProgressRead;
+export default React.memo(ScrollProgressRead);

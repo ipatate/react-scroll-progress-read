@@ -23,6 +23,7 @@ const reducer = (state: IState, action: {type: string; payload: {}}) => {
 };
 
 const App: React.FC<{}> = () => {
+  const refContainer = React.useRef();
   const [state, dispatch] = React.useReducer(reducer, initialState);
   const update = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const {name, value} = e.currentTarget;
@@ -32,7 +33,7 @@ const App: React.FC<{}> = () => {
   return (
     <>
       <div style={{margin: 0, padding: 0, position: 'fixed', top: 0}}>
-        <ScrollProgressRead {...state} />
+        <ScrollProgressRead refTarget={refContainer} {...state} />
       </div>
       <div style={{margin: 0, padding: 0, position: 'fixed', bottom: 0}}>
         <ScrollProgressRead
@@ -40,6 +41,9 @@ const App: React.FC<{}> = () => {
           height="20px"
           barColor="blue"
         />
+      </div>
+      <div style={{margin: 0, padding: 0, position: 'fixed', bottom: '20px'}}>
+        <ScrollProgressRead height="10px" barColor="orange" />
       </div>
       <div
         style={{
@@ -50,6 +54,13 @@ const App: React.FC<{}> = () => {
         }}
       >
         <h1>React Scroll Progress Read</h1>
+        <p>
+          <ul>
+            <li>The top bar target element with ref()</li>
+            <li>The orange bottom bar target the document</li>
+            <li>The blue bottom bar target element by ID</li>
+          </ul>
+        </p>
         <div>
           <select onChange={update} name="barColor">
             <option value="red">red</option>
@@ -69,7 +80,7 @@ const App: React.FC<{}> = () => {
             <option value="20px">20px</option>
           </select>
         </div>
-        <p>
+        <p ref={refContainer}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod non
           faceret, si in voluptate summum bonum poneret. Illud quaero, quid ei,
           qui in voluptate summum bonum ponat, consentaneum sit dicere. Quod
@@ -260,4 +271,4 @@ const App: React.FC<{}> = () => {
   );
 };
 
-export default App;
+export default React.memo(App);
