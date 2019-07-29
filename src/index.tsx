@@ -14,6 +14,9 @@ interface IScrollProgressProps {
   refTarget?: React.RefObject<HTMLElement>
 }
 
+// for update width
+const upSize = (cb: FrameRequestCallback) => window.requestAnimationFrame(cb);
+
 const ScrollProgressRead: React.FC<IScrollProgressProps> = (
   {
     backgroundColor,
@@ -67,18 +70,18 @@ const ScrollProgressRead: React.FC<IScrollProgressProps> = (
 
     // if before element position when target is element
     if (scrollPx < startTop) {
-      return setScrolled("0%");
+      return upSize(() => setScrolled("0%"));
     }
     // if after element end
     if (_t > elementHeight) {
-      return setScrolled("100%");
+      return upSize(() => setScrolled("100%"));
     }
     // position scroll
     const _p = fixed(_t / elementHeight);
     // percentage for css
     const pos = `${fixed(_p * 100)}%`;
     // update scroll
-    setScrolled(pos);
+    upSize(() => setScrolled(pos));
   };
   // style for container
   const containerStyle = {
