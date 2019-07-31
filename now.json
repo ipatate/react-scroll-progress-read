@@ -10,5 +10,5 @@
       "use": "@now/static-build"
     }
   ],
-  "routes": [{"src": "/(.*)", "dest": "example/$1"}]
+  "routes": [{"src": "/(.*)", "dest": "doc/public/$1"}]
 }

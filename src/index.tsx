@@ -42,6 +42,7 @@ const ScrollProgressRead: React.FC<IScrollProgressProps> = (
     },
     []
   );
+
   // update width with scroll position
   const updatePos = () => {
     // if ref use it or use container by ID
