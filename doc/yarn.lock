@@ -10277,10 +10277,10 @@ react-reconciler@^0.20.0:
     prop-types "^15.6.2"
     scheduler "^0.13.6"
 
-react-scroll-progress-read@^0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/react-scroll-progress-read/-/react-scroll-progress-read-0.0.11.tgz#a66dfa8549c667ba2b38f58aae3e92b613a4cf26"
-  integrity sha512-XxwaYIJ0BK/gpBYgaFMcaP7g7iS9Axk7BxQeMHq8CC3DGdxHLEuIhtb2vSXjhi9oX61ISWVlWb+VVswMIz1GNw==
+react-scroll-progress-read@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/react-scroll-progress-read/-/react-scroll-progress-read-0.0.12.tgz#083eb904b26c69835dc371dba18f488879edf5d1"
+  integrity sha512-IPUtUlN47h7fmA8CwtGW2dmfWJoFFEL8+NQhEuJF+7KQaJSaSJpOauu8216l2q2C31WovWsxMdVk9K5qd+7AgA==
 
 react-side-effect@^1.1.0:
   version "1.1.5"
