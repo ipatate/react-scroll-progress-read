@@ -11,7 +11,6 @@ import styles from "./styles.module.css"
 export default ({ data, pathContext }) => {
   const { mdx } = data
   const { prev, next } = pathContext
-  console.log(prev, next)
 
   return (
     <Layout>
