@@ -6,7 +6,7 @@
       "use": "@now/static-build"
     },
     {
-      "src": "example/package.json",
+      "src": "doc/package.json",
       "use": "@now/static-build"
     }
   ],
