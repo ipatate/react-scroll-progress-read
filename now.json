@@ -7,7 +7,8 @@
     },
     {
       "src": "doc/package.json",
-      "use": "@now/static-build"
+      "use": "@now/static-build",
+      "config": {"distDir": "public"}
     }
   ],
   "routes": [{"src": "/(.*)", "dest": "doc/public/$1"}]
