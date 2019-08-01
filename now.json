@@ -11,5 +11,5 @@
       "config": {"distDir": "public"}
     }
   ],
-  "routes": [{"src": "/(.*)", "dest": "doc/public/$1"}]
+  "routes": [{"src": "/(.*)", "dest": "doc/$1"}]
 }
