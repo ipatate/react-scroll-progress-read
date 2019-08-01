@@ -1,6 +1,6 @@
 ---
 title: "Usage with ref for target react element"
-date: "2019-08-10"
+date: "2019-08-12"
 slug: 'scroll-progress-read-with-ref'
 ---
 
@@ -29,7 +29,7 @@ const Main = forwardRef(({ txt }, ref) => (
 
 const Container = () => {
   const mainTxt = useRef()
-  const [txt, setText] = useState(getParagraph(500))
+  const [txt, setText] = useState(getParagraph(700))
   const addText = () => setText(`${getParagraph(200)}<br /><br />${txt}`)
 
   return (

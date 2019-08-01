@@ -9,7 +9,7 @@ const Main = forwardRef(({ txt }, ref) => (
 
 const ContainerRef = () => {
   const mainTxt = useRef()
-  const [txt, setText] = useState(getParagraph(500))
+  const [txt, setText] = useState(getParagraph(700))
   const addText = () => setText(`${getParagraph(200)}<br /><br />${txt}`)
 
   return (

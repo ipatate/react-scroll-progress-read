@@ -20,6 +20,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
+              // showLineNumbers: true,
               classPrefix: "language-",
               inlineCodeMarker: {
                 tsx: "tsx",

@@ -8,6 +8,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: #f9f9f9;
 }
 
 article,
@@ -717,4 +718,52 @@ pre tt:after {
 
 footer {
     margin-top: 40px;
+}
+
+pre {
+  background-color: #2f1e2e !important;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.gatsby-highlight-code-line {
+  background-color: #4f424c;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+.gatsby-highlight pre[class*="language-"]{
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* Adjust the position of the line numbers */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+/**
+ * If you only want to use line numbering
+ */
+
+.gatsby-highlight {
+  background-color: #2f1e2e;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: .5rem 1rem;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #666;
 }

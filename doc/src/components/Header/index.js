@@ -2,31 +2,23 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import styles from "./styles.module.css"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `gray`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <header className={styles.header}>
+    <div className={styles.header_main}>
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+        <Link to="/">{siteTitle}</Link>
       </h1>
+      <div className={styles.header_link}>
+        <a href="https://github.com/ipatate/react-scroll-progress-read">
+          Github
+        </a>
+        <a href="https://www.npmjs.com/package/react-scroll-progress-read">
+          NPM
+        </a>
+        <a href="https://twitter.com/PatrickFaramaz">Twitter</a>
+      </div>
     </div>
   </header>
 )
