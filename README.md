@@ -10,6 +10,18 @@ npm package : [https://www.npmjs.com/package/react-scroll-progress-read](https:/
 
 Version 16.8 for use React Hook
 
+### Installation
+
+```shell
+npm i react-scroll-progress-read
+```
+
+or
+
+```shell
+yarn add react-scroll-progress-read
+```
+
 ### For include in your project
 
 ```jsx

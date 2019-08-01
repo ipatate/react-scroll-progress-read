@@ -5,6 +5,7 @@ import ScrollProgressRead from "react-scroll-progress-read"
 import ContainerRef from "../ContainerRef"
 import ContainerID from "../ContainerID"
 import Container from "../Container"
+import ExampleList from "../ExampleList"
 import Link from "../Link"
 
 import Paragraph from "./Paragraph"
@@ -23,4 +24,5 @@ export const MDXGlobalComponents = {
   ContainerRef,
   ContainerID,
   Container,
+  ExampleList,
 }

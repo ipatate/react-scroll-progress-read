@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `React Scroll Progress Read`,
-    description: `Example of using component react-scroll-progress-read`,
+    description: `When you scroll on the page, the bar indicate the progression on the
+    page or on the paragraph.`,
     author: `@PatrickFaramaz`,
   },
   plugins: [
