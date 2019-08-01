@@ -30,7 +30,7 @@ export const outerHeight = (el: HTMLElement): number => {
   const style = window.getComputedStyle(el);
   const { marginBottom, marginTop } = style;
   if (marginBottom && marginTop) {
-    height += parseInt(marginTop, 2) + parseInt(marginBottom, 2);
+    height += parseInt(marginTop, 10) + parseInt(marginBottom, 10);
   }
   return height;
 };
