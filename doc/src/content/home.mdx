@@ -4,7 +4,7 @@ date: "2019-08-10"
 slug: '/'
 ---
 
-When you scroll on the page, the bar indicate the progression on the page or on the paragraph.
+### NPM Package
 
 npm package : [https://www.npmjs.com/package/react-scroll-progress-read](https://www.npmjs.com/package/react-scroll-progress-read)
 
@@ -30,17 +30,26 @@ render() {
 
 By default, the bar take the window height. If you want target an html element, you must indicate the ID of the element in props with "target"
 
-You can change parameter with the props :
+---
 
-- backgroundColor (string) : color of the container
-- barColor (string) : color of the bar
-- height (string) : height of the component.
-- target (string) : ID of html element
-- refTarget (React.RefObject) : reference to react element
+**You can change parameter with the props :**
 
-The props aren't required.
+- backgroundColor (string) optional : color of the container
+- barColor (string) optional : color of the bar
+- height (string) optional : height of the component.
+- target (string) (optional if refTarget defined): ID of html element
+- refTarget (React.RefObject) (optional if target defined) : reference to react element
 
-if not ref target, the component use target ID and if target is undefined, the component use the document.
+**if not ref target, the component use target ID and if target is undefined, the component use the document.**
+
+---
+
+**Default values :**
+
+- backgroundColor: "#CCC"
+- barColor: "#e91e63"
+- height: "5px"
+
 
 ```jsx
 import ScrollProgressRead from 'react-scroll-progress-read';
